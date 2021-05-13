@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        <input type="text" name="username" id="username" onkeyup="return console.log(this.value)"  placeholder="Username">
+        <div class="city" onclick="return alert('kire vai')" >Khulna</div>
+        <div class="city">Lakshmipur</div>
+        <div class="city">Bagerhat</div>
+        <div class="city">Noakhali</div>
+   </form>
+   <script>
+       var myObj = {
+   name: 'Zonayed Ahmed',
+   age: 21,
+   timer: function() {
+      setTimeout(function() {
+         console.log('My name is ' + this.name);
+      }.bind(myObj), 5000)
+    }
+}
+
+console.log(myObj.timer())
+   </script>
+</body>
+</html>
